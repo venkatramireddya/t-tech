@@ -1,0 +1,22 @@
+{
+    "HEADER_NAV_HOME_LINK": "Home",
+    "HEADER_NAV_SERVICES_LINK": "Services",
+    "HEADER_NAV_SOLUTIONS_LINK": "Solutions",
+    "HEADER_NAV_CAREERS_LINK": "Careers",
+    "HEADER_NAV_CLIENTS_LINK": "Clients",
+    "HEADER_NAV_ABOUT_LINK": "About",
+    "HEADER_NAV_CONTACT_US_LINK": "Contact Us",
+    "ABOUT_COMPANY": "My3Techhas taken rapid strides in the IT market by bringing in a wide array of technical skills and capabilities to our clients. We offer a wide spectrum of IT Services including Information Systems Solutions, Customized Software Solutions, Web Solutions and IT Staffing to a wide range of industries in various sectors including Healthcare, Medicaid, Eligibility and Medical Insurance. We focus on applications that are critical to managing the business in today's complex and competitive environment. Our competitive edge is the combined strength of our people,processes and technology. Whether you need a single consultant, or an entire project team, we can provide you with the best IT resources that will help you achieve the results you are looking for.",
+
+
+    "WELCOME_MESSAGE": "Welcome to",
+    "COMPANY_NAME": "T-Tech Partners",
+    "OFFICE_LOCATIONS": "Office Locations",
+    "CONTACTUS_PHONE": "",
+    "CONTACTUS_EMAIL": "",
+    "CONTACTUS_STATE_FULL_NAME":"State",
+    "CONTACTUS_ADDRESS_LINE":"Addressline1",
+    "CONTACTUS_ADDRESS_LINE2":"Addressline2",
+    "CONTACTUS_CITY_STATE_ZIP":"state city zip"
+
+}

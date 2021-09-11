@@ -1,0 +1,32 @@
+<div id="tech-app-container">
+    <ng-container>
+        <div>
+            <app-tech-header (sideNavigation)="toggleSideNavigation($event)"></app-tech-header>
+        </div>
+        
+         <mat-sidenav-container>
+            <mat-sidenav #sidenav mode="over" class="mat-side-nav-style" closed role= "navigation">
+                <mat-nav-list *ngFor="let link of listOfLinks">
+                    <a *ngIf="!link.sanitize" class ="tech-sidenav-txt" (click)="close(link)" mat-list-item routerLink="{{link.link}}">
+                     {{link.name | translate}}
+                     <mat-icon class="tech-sideNavigation-icon">keyboard_arrow_right</mat-icon>
+                    </a>
+                </mat-nav-list>
+            </mat-sidenav> 
+           
+          
+           <mat-sidenav-content>
+                <main class="main-content-container" [ngClass]= "{ 'tech-overlay': true, 'tech-no-padding': true }">
+                    <div class="tech-content">
+                        <router-outlet></router-outlet>
+                    </div>
+                </main>
+            </mat-sidenav-content>
+        
+        </mat-sidenav-container>
+        
+         <div>
+            <app-tech-footer></app-tech-footer>
+        </div>
+    </ng-container>
+</div>

@@ -1,0 +1,33 @@
+<nav class="app-tech-header">
+  <div class="tech-main-nav">
+    <div class = "tech-header-hamburger">
+      <a mat-icon-button (click)="openSideNavigation()"><mat-icon>menu</mat-icon></a>
+    </div>
+     <!-- logo -->
+    <div class="navbar-brand">
+      <a routerLink="/home">
+        <img src="assets/img/logo.PNG" alt="T-Tech Partners">
+      </a>
+    </div>
+      <!-- menu -->
+    <div class="header-links">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+      <a>Services
+              <ul class="submenu">
+                <li><a href="it-staffing.html">IT Staffing</a></li>
+                <li><a href="procurement.html">Procurement Sourcing Services</a></li>
+                <li><a href="client-augmentation.html">Client Site Augmentation</a></li>
+                <li><a href="finance-accounting.html">Finance &amp; Accounting</a></li>
+                <li><a href="direct-hire.html">Direct Hire</a></li>
+                <li><a href="industries.html">Industries</a></li>
+              </ul>
+            </a>
+      <a routerLink="/solutions" routerLinkActive="active">Solutions</a>
+      <a routerLink="/careers" routerLinkActive="active">Careers</a>
+      <a routerLink="/clients" routerLinkActive="active">Clients</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+      <a routerLink="/contactUs" routerLinkActive="active">Contact US</a>
+      <a routerLink="/login" routerLinkActive="active">login</a>
+    </div>
+  </div>
+</nav>

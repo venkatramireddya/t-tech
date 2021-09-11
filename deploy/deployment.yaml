@@ -1,0 +1,48 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ttech-web
+spec:
+  replicas: 2
+  selector:
+      matchLabels:
+          app: ttech-web-app
+  template:
+    metadata:
+      labels:
+        app: ttech-web-app
+    spec:
+      containers:
+      - name: ttech-web
+        image: reachvenkat04/ttech:latest
+        resources:
+          limits:
+            memory: '1G'
+            cpu: '100m'
+          requests:
+            memory: '512'
+            cpu: '70m'
+        imagePullPolicy: Always
+        ports:
+         - containerPort: 8000
+        readinessProbe:
+          failureThreshold: 5
+          initialDelaySeconds: 30
+          periodSeconds: 15
+          successThreshold: 1
+          tcpSocket:
+            port: 8000
+          timeoutSeconds: 5
+        livenessProbe:
+          failureThreshold: 5
+          initialDelaySeconds: 15
+          periodSeconds: 15
+          successThreshold: 1
+          tcpSocket:
+            port: 8000
+          timeoutSeconds: 5
+        securityContext:
+          runAsNonRoot: true
+          capabilities:
+            drop:
+                - ALL

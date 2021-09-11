@@ -1,0 +1,25 @@
+.mat-side-nav-style {
+  width: 150px;
+  font-weight: bold;
+}
+.mat-drawer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.mat-drawer-content {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.tech-sidenav-txt {
+  border-bottom: 1px solid;
+  width: 90% !important;
+  margin-left: 5%;
+}
+.main-content-container {
+  flex: 1 1 auto;
+  min-height: 145vh;
+  overflow: auto;
+}

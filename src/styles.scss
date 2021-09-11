@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    height: auto;
+    width: auto;
+}
+
+#tech-app-container {
+    background-color:  white
+}
+
+html, body { height: 100%; }
+body {
+     margin: 0; 
+     margin-left: 20px;
+     margin-right: 20px;
+    background-color: #2f3338 ;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+main {
+    background-color: #ffffff;
+    .tech-content {
+        padding: 48px 15%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+a {
+    cursor: pointer;
+}
